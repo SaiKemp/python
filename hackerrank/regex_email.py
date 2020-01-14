@@ -1,3 +1,4 @@
+#https://www.hackerrank.com/challenges/detect-the-email-addresses/problem
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 # coding: utf-8
 import re
