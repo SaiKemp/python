@@ -1,18 +1,14 @@
 def binarysearch(mylist,x):
-    print(len(mylist))
-    if len(mylist) <= 1:
-        return mylist
-    else:
-        mid = len(mylist)//2
-        #print(mid)
+    left = 0
+    right = len(mylist)
+    while left<=right:
+        mid = int(left + ((right - left)/2))
         if mylist[mid] == x:
             return mid
-        elif x > mylist[mid]:
-            binarysearch(mylist[mid:],x)
-        elif x < mylist[mid]:
-            #print(mylist[0:mid])
-            binarysearch(mylist[0:mid],x)
-
-m =[4,5,6,7,8,9]
-print(binarysearch(m,4))
-        
+        elif mylist[mid]<x:
+            left = mid +1
+        else:
+            right = mid -1
+    return -1
+print(binarysearch([1,2,4,6,8,9],8))
+            
