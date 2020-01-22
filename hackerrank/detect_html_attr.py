@@ -1,5 +1,5 @@
 #https://www.hackerrank.com/challenges/html-attributes/problem
-re
+import re
 import sys
 #sys.stdin.read()
 N = raw_input()
